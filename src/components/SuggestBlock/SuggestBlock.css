@@ -1,0 +1,30 @@
+.aside__item {
+    display: grid;
+    grid-template-areas:
+        "pic name"
+        "pic info";
+    column-gap: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    align-content: center;
+}
+.aside__profile-pic {
+    grid-area: pic;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.aside__user-name {
+    grid-area: name;
+    font-weight: 600;
+    color: #000;
+    font-size: 14px;
+    align-self: end;
+}
+.aside__user-info {
+    grid-area: info;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    align-self: start;
+}

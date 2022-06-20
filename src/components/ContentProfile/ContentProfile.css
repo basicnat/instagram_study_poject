@@ -1,0 +1,15 @@
+.profile__content {
+    width: 60%;
+}
+.profile__content-wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px ;
+    grid-gap: .5em;
+    object-fit: cover;
+
+
+}
+
+

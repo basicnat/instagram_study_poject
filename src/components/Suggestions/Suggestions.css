@@ -1,0 +1,18 @@
+.page-content__aside {
+    position: fixed;
+    top: 90px;
+    left: 65%;
+}
+.aside__title {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .page-content__aside {
+        display: none;
+    }
+
+}

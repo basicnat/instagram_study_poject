@@ -1,0 +1,157 @@
+.post__item {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    margin-top: 25px;
+
+}
+
+.post__header {
+    height: 60px;
+    display: flex;
+    justify-items: start;
+    padding: 15px;
+    align-items: center;
+
+}
+.post__header:hover {
+    cursor: pointer;
+}
+
+.post__user-name {
+    padding: 10px;
+    font-weight: 600;
+    color: #000;
+    font-size: 1em;
+}
+.post__icon {
+    height: 22px;
+    width: 22px;
+
+}
+.post__reactions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 10px 15px;
+}
+
+.likeWrap {
+    position: relative;
+    cursor: pointer;
+    width: 22px;
+}
+.likeInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+
+}
+.likeAct {
+    height: 21.2px;
+    width: 21.2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+.likeInput:checked + .likeAct {
+    display: block;
+}
+.like {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.likeWrap > .like:hover {
+    opacity: 50%;
+}
+
+
+
+.post__remove-button {
+    border: none;
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: .8em;
+    color: #00A2FFFF;
+    box-sizing: border-box;
+    justify-content: center;
+    opacity: 40%;
+}
+.post__remove-button:hover {
+    cursor: pointer;
+    color: #00A2FFFF;
+    opacity: 100%;
+}
+.addPage__remove-button:active{
+    color: #017abd;
+
+}
+.post__photo-desc{
+    width: 80%;
+    padding: 0 15px 0 15px;
+    font-size: 1em;
+    font-weight: 400;
+}
+.post__comments {
+    width: 100%;
+    height: 30%;
+    overflow: auto;
+    padding: 10px 0 40px 15px;
+}
+
+.post__user-comment {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 10px 15px;
+    border-top: 1px solid #dfdfdf;
+    align-items: center;
+}
+
+.post__comment-box {
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+.post__comment-box::placeholder {
+    color: #afafaf;
+}
+
+.post__comment-button {
+    width: fit-content;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(0, 162, 255);
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 1;
+}
+.post__comment-button:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 760px) {
+    .post__item {
+        border: none;
+        font-size: small;
+    }
+
+
+}
